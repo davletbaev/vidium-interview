@@ -17,8 +17,6 @@ export default createStore<IStore>({
 
       if (!episodes) return null;
 
-      console.log(episodes);
-
       commit('receivedEpisodes', episodes);
 
       return episodes;

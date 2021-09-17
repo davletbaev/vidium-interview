@@ -183,9 +183,12 @@ export default defineComponent({
 
 .schedule-item__wrapper--live {
   &:after {
-    background: var(--system-live-hightlight-gradient);
-    background-size: 240px;
-    animation: shineBorder linear 1s infinite;
+    // Использовал кастомный градиент.
+    // Сделал стандартный в 2 раза больше и сделал его симметричным, чтобы не было жестких переходов при анимации
+    background: linear-gradient(90deg, #456EFF 0%, #F04D4D 50%, #476FFF 100%);
+
+    background-size: 200%;
+    animation: shineBorder linear 2s infinite;
   }
 }
 
@@ -276,7 +279,7 @@ export default defineComponent({
   }
 
   100% {
-    background-position: 240px;
+    background-position: 200%;
   }
 }
 </style>

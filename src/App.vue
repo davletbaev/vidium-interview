@@ -8,6 +8,7 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue';
+
 import Schedule from './components/Schedule.vue';
 
 export default defineComponent({
