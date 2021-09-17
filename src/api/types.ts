@@ -12,12 +12,12 @@ export interface IEpisode {
   };
   speakers: Array<ISpeaker>;
 }
-
-export interface IModifiedEpisode extends IEpisode {
+export interface IModifiedEpisode extends Omit<IEpisode, 'lines'> {
   started: boolean;
   stopped: boolean;
+  title: string;
 }
 
-export type EpisodesResponse = Array<IEpisode>;
+export type EpisodesResponse = IEpisode[];
 
-export type ModifiedEpisodesResponse = Array<IModifiedEpisode>;
+export type ModifiedEpisodesResponse = IModifiedEpisode[];
