@@ -12,11 +12,6 @@
 
   --ff-base: Montserrat, Arial, sans-serif;
 
-  --fs-base: 100%;
-
-  @media (min-width: 1024px) {
-    --fs-text: 1rem;
-    --fs-text-lg: 1.125rem;
-    --fs-caption: 0.75rem;
-  }
+  --fs-text: 15px;
+  --fs-text-small: 14px;
 }

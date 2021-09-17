@@ -9,7 +9,6 @@
 html {
   height: 100%;
   box-sizing: border-box;
-  font-size: var(--fs-base);
 }
 
 *,
@@ -29,11 +28,8 @@ body {
   padding: 0;
   font-family: var(--ff-base);
   font-size: var(--fs-text);
-  line-height: var(--lh-text);
-  color: var(--color-text);
+  line-height: 1.6;
+  color: var(--text-light-primary);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
-  letter-spacing: 0.005em;
-  font-feature-settings: "tnum" on, "lnum" on;
 }
