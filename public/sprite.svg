@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <symbol id="clock" viewBox="0 0 12 12">
+    <path fill-rule="evenodd" clip-rule="evenodd"
+      d="M0 6c0-3.312 2.682-6 5.994-6A6.003 6.003 0 0112 6c0 3.312-2.688 6-6.006 6A5.997 5.997 0 010 6zm1.2 0c0 2.652 2.148 4.8 4.8 4.8 2.652 0 4.8-2.148 4.8-4.8 0-2.652-2.148-4.8-4.8-4.8A4.799 4.799 0 001.2 6zm4.2-3h.9v3.15L9 7.752l-.45.738L5.4 6.6V3z"
+      fill="currentColor" />
+  </symbol>
+  <symbol id="arrow-left" viewBox="0 0 27 27">
+    <path d="M18 7.189 11.974 13.5 18 19.811l-1.855 1.94L8.25 13.5l7.895-8.25L18 7.188Z" fill="currentColor" />
+  </symbol>
+  <symbol id="arrow-right" viewBox="0 0 27 27">
+    <path d="m9 19.811 6.026-6.311L9 7.189l1.855-1.939 7.895 8.25-7.895 8.25L9 19.811Z" fill="currentColor" />
+  </symbol>
+</svg>
