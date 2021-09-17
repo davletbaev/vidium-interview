@@ -1,6 +1,11 @@
+import { App } from 'vue';
 import { createStore } from 'vuex';
 
-import { App } from '@/main';
+declare module 'vuex' {
+  export interface Store<S> {
+    app: App;
+  }
+}
 
 export default createStore({
   state: {
@@ -9,17 +14,17 @@ export default createStore({
   mutations: {
     receivedEpisodes(state, episodes) {
       state.episodes = episodes;
-    }
+    },
   },
   actions: {
     async getEpisodes({ commit }, eventId: string) {
-      const episodes = await App.config.globalProperties.$api.timetable.getEpisodes();
+      const episodes = await this.app.config.globalProperties.$api.timetable.getEpisodes(eventId);
 
       if (!episodes) return null;
 
       commit('receivedEpisodes', episodes);
 
       return episodes;
-    }
+    },
   },
 });

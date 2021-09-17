@@ -1,3 +1,4 @@
+/* eslint-disable import/prefer-default-export */
 import { createApp } from 'vue';
 import WebFont from 'webfontloader';
 
@@ -9,5 +10,7 @@ import './assets/styles/global.scss';
 WebFont.load({ custom: { families: ['Montserrat'] } });
 
 export const App = createApp(AppComponent).use(store);
+
+store.app = App;
 
 App.mount('#app');
