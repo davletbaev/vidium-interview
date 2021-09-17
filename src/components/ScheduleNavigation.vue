@@ -79,7 +79,8 @@ export default defineComponent({
     margin-left: auto;
   }
 
-  &:hover {
+  &:hover,
+  &:focus-visible {
     color: var(--buttons-bubbles-default-fill-icon-borders-active);
     border-color: var(--buttons-bubbles-default-fill-icon-borders-active);
   }

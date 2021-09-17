@@ -68,7 +68,6 @@ export default defineComponent({
 
   margin: 0 !important;
 
-  border: inset 1px solid transparent;
   background-color: var(--slider-vod-live-fill);
   border-radius: 7px;
 
@@ -100,7 +99,7 @@ export default defineComponent({
     z-index: -1;
 
     width: calc(100% + 2px);
-    height: calc(100% + 2px);
+    height: 5px;
 
     border-radius: 7px;
 
@@ -113,6 +112,10 @@ export default defineComponent({
 
   &:hover {
     height: 5px;
+
+    &:after {
+      height: 7px;
+    }
   }
 }
 
@@ -145,7 +148,10 @@ export default defineComponent({
   background-color: var(--slider-hover-fill);
 
   &:after {
-    background: var(--system-live-hightlight-gradient);
+    background: var(--system-live-highlight-gradient);
+
+    background-size: 200%;
+    animation: shineBorder linear 2s infinite;
   }
 
   &.schedule__dot--active:after {

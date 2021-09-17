@@ -183,9 +183,7 @@ export default defineComponent({
 
 .schedule-item__wrapper--live {
   &:after {
-    // Использовал кастомный градиент.
-    // Сделал стандартный в 2 раза больше и сделал его симметричным, чтобы не было жестких переходов при анимации
-    background: linear-gradient(90deg, #456EFF 0%, #F04D4D 50%, #476FFF 100%);
+    background: var(--system-live-highlight-gradient);
 
     background-size: 200%;
     animation: shineBorder linear 2s infinite;
@@ -271,15 +269,5 @@ export default defineComponent({
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
-}
-
-@keyframes shineBorder {
-  0% {
-    background-position: 0;
-  }
-
-  100% {
-    background-position: 200%;
-  }
 }
 </style>

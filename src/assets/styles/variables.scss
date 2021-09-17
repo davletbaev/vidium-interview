@@ -6,7 +6,9 @@
   --accent-primary: #D63D3D;
 
   --system-live: #FF6C6C;
-  --system-live-hightlight-gradient: linear-gradient(90deg, #456EFF 0%, #F04D4D 100%);
+  // Использовал кастомный градиент.
+  // Сделал стандартный в 2 раза больше и сделал его симметричным, чтобы не было жестких переходов при анимации
+  --system-live-highlight-gradient: linear-gradient(90deg, #456EFF 0%, #F04D4D 50%, #476FFF 100%);
 
   --background-light: #FFFFFF;
 
