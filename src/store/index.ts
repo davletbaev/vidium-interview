@@ -1,13 +1,8 @@
-import { App } from 'vue';
 import { createStore } from 'vuex';
 
-declare module 'vuex' {
-  export interface Store<S> {
-    app: App;
-  }
-}
+import { IStore } from './types';
 
-export default createStore({
+export default createStore<IStore>({
   state: {
     episodes: [],
   },
@@ -21,6 +16,8 @@ export default createStore({
       const episodes = await this.app.config.globalProperties.$api.timetable.getEpisodes(eventId);
 
       if (!episodes) return null;
+
+      console.log(episodes);
 
       commit('receivedEpisodes', episodes);
 
