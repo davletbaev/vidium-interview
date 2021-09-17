@@ -14,7 +14,6 @@ html {
 *,
 *:before,
 *:after {
-  box-sizing: inherit;
   font-family: inherit;
   outline: none;
   -webkit-tap-highlight-color: transparent;
@@ -30,6 +29,11 @@ body {
   font-size: var(--fs-text);
   line-height: 1.6;
   color: var(--text-light-primary);
+  background-color: #E5E5E5;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+#app {
+  height: 100%;
 }

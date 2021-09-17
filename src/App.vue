@@ -1,7 +1,9 @@
 <template>
-  <div class="">
-    <Schedule />
-  </div>
+  <main class="app">
+    <div class="container mx-auto app__schedule">
+      <Schedule :eventId="'20210619-scheduletest'" />
+    </div>
+  </main>
 </template>
 
 <script lang="ts">
@@ -16,4 +18,17 @@ export default defineComponent({
 });
 </script>
 
-<style lang="scss"></style>
+<style lang="scss">
+.app {
+  height: 100%;
+}
+
+.app__schedule {
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+
+  overflow-x: hidden;
+}
+</style>
