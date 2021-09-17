@@ -25,7 +25,18 @@ const timetable = {
       );
     } catch (e) {
       // Заглушка на случай недоступности основного API на время разработки
-      return dummyData;
+      return dummyData.map(
+        ({
+          startTime, stopTime, lines, ...restProps
+        }) => <IModifiedEpisode>{
+          started: Boolean(startTime),
+          stopped: Boolean(stopTime),
+          startTime,
+          stopTime,
+          title: lines.title,
+          ...restProps,
+        },
+      );;
     }
   },
 };
