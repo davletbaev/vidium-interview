@@ -48,5 +48,6 @@ module.exports = {
         multiline: 'always',
       },
     ],
+    'no-param-reassign': 'off'
   },
 };
