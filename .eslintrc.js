@@ -31,7 +31,7 @@ module.exports = {
     'vue/max-len': [
       'error',
       {
-        code: 100,
+        code: 120,
         template: 100,
         tabWidth: 2,
         comments: 100,
@@ -48,6 +48,10 @@ module.exports = {
         multiline: 'always',
       },
     ],
-    'no-param-reassign': 'off'
+    'no-param-reassign': 'off',
+    'max-len': [
+      'error',
+      120,
+    ],
   },
 };
