@@ -47,12 +47,10 @@ export default defineComponent({
   bottom: auto !important;
   left: 50% !important;
 
-  display: grid;
-  grid-gap: 10px;
-  grid-auto-flow: column;
-  grid-auto-columns: 1fr;
+  display: flex;
 
   align-items: center;
+  justify-content: center;
 
   transform: translate(-50%, -50%);
 }
@@ -62,11 +60,9 @@ export default defineComponent({
 
   display: block;
 
-  width: 100%;
-  flex: 0 1 100%;
+  width: 148px;
+  flex: 0 1 148px;
   height: 3px;
-
-  margin: 0 !important;
 
   background-color: var(--slider-vod-live-fill);
   border-radius: 7px;
@@ -75,6 +71,10 @@ export default defineComponent({
   opacity: 1;
 
   transform-origin: center center;
+
+  & + .schedule__dot {
+    margin-left: 10px;
+  }
 
   &:before {
     content: '';
